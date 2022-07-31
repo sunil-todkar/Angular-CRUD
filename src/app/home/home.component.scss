@@ -1,0 +1,51 @@
+.banner-wrapper {
+  height: calc(100vh - 56px);
+  // width: calc(100vw - 5px);
+  //width: 100vw;
+  .banner-info {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+  }
+}
+#acme-banner-slider.carousel {
+  height: 100%;
+  width: 100%;
+  .carousel-inner,
+  .carousel-item,
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  .carousel-caption {
+    position: absolute;
+    right: 15%;
+    top: 20%;
+    left: 0%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    h3 {
+      font-family: poppins-medium;
+      font-size: 40px;
+      color: #fff;
+      line-height: 1.2;
+      font-weight: 900;
+    }
+    p {
+      font-size: 28px;
+    }
+  }
+}
+
+.home-info-wrapper {
+  background-image: url("https://drive.google.com/uc?id=13_h9Zyv1XFM045sfOayC_eEXdt5OGdIJ");
+  padding: 55px 0px;
+  text-align: center;
+  h2 {
+    font-family: gotham-regular;
+    color: #fff;
+  }
+}

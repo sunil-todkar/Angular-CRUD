@@ -1,0 +1,37 @@
+<div class="login-form-wrapper">
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <h4 class="text-center mb-4">LOGIN HERE</h4>
+    <p *ngIf="showError" class="error">User Name or password is incorrect</p>
+    <div class="form-group">
+      <label for="username">User Name</label>
+      <input type="text" class="form-control" id="username" formControlName="username" placeholder="Enter Email"
+        [ngClass]="{ 'is-invalid': submitted && f.username.errors }">
+      <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+        <div *ngIf="f.username.errors.required">User Name is required</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password" formControlName="password" placeholder="Enter Password"
+        [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
+      <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+        <div *ngIf="f.password.errors.required">Password is required</div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-6">
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" value=""> Remember Me
+          </label>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="float-right"><a>Forgot Password?</a></div>
+      </div>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">LOG IN</button>
+    </div>
+  </form>
+</div>

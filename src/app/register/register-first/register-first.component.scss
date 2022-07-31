@@ -1,0 +1,16 @@
+.register-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  form {
+    width: 700px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    padding: 25px;
+    h3 {
+      font-family: gotham-regular;
+      color: #07375e;
+    }
+  }
+}

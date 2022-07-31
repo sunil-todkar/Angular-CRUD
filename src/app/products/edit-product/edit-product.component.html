@@ -1,0 +1,65 @@
+<div class="edit-product-wrapper">
+  <form [formGroup]="updateProductForm" (ngSubmit)="onEditProductSubmit()">
+    <div class="upadate-image-outer">
+      <div class="upadte-img-wrapper">
+        <img [attr.src]="imgProductSrc || editProductData.image" class="img-fluid" />
+        <input type="file" name="image" (change)="readImage($event)" formControlName="image"
+          [(ngModel)]="editProductData.image">
+      </div>
+      <i class="fa fa-camera" aria-hidden="true"></i>
+    </div>
+    <div class="form-group">
+      <label for="name">Product Name</label>
+      <input type="name" class="form-control" formControlName="name" id="name" [(ngModel)]="editProductData.name"
+        [ngClass]="{ 'is-invalid': submitted && f.name.errors }">
+      <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+        <div *ngIf="f.name.errors.required">Name is required</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="code">Product Code</label>
+      <input type="code" class="form-control" formControlName="code" id="code" name="code"
+        [(ngModel)]="editProductData.code" [ngClass]="{ 'is-invalid': submitted && f.code.errors }">
+      <div *ngIf="submitted && f.code.errors" class="invalid-feedback">
+        <div *ngIf="f.code.errors.required">Code is required</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="status">Product Status</label>
+      <input type="status" class="form-control" formControlName="status" id="status" name="status"
+        [(ngModel)]="editProductData.status" [ngClass]="{ 'is-invalid': submitted && f.status.errors }">
+      <div *ngIf="submitted && f.status.errors" class="invalid-feedback">
+        <div *ngIf="f.status.errors.required">Status is required</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="price">Price</label>
+      <input type="price" class="form-control" formControlName="price" id="price" name="price"
+        [(ngModel)]="editProductData.price" [ngClass]="{ 'is-invalid': submitted && f.price.errors }">
+      <div *ngIf="submitted && f.price.errors" class="invalid-feedback">
+        <div *ngIf="f.price.errors.required">Price is required</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="ratings">Rating</label>
+      <input type="ratings" class="form-control" formControlName="ratings" id="ratings" name="ratings"
+        [(ngModel)]="editProductData.ratings" [ngClass]="{ 'is-invalid': submitted && f.ratings.errors }">
+      <div *ngIf="submitted && f.ratings.errors" class="invalid-feedback">
+        <div *ngIf="f.ratings.errors.required">Ratings is required</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea class="form-control" rows="5" formControlName="description" id="description" name="description"
+        [(ngModel)]="editProductData.description"
+        [ngClass]="{ 'is-invalid': submitted && f.description.errors }"></textarea>
+      <div *ngIf="submitted && f.description.errors" class="invalid-feedback">
+        <div *ngIf="f.description.errors.required">Description is required</div>
+      </div>
+    </div>
+    <div class="form-group mt-4">
+      <button type="submit" class="btn btn-primary mr-4">Update Product</button>
+      <button type="submit" class="btn btn-primary" (click)="cancelEditProductModal()">Cancel</button>
+    </div>
+  </form>
+</div>

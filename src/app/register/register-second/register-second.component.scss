@@ -1,0 +1,39 @@
+.register-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  form {
+    width: 700px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    padding: 25px;
+    h3 {
+      font-family: gotham-regular;
+      color: #07375e;
+    }
+  }
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("https://drive.google.com/uc?id=18BbcdCb1ZAtmLaP-Gq29TUu-Bjev7N91")
+    96% / 15% no-repeat;
+  background-size: unset;
+  background-color: #fff;
+}
+
+/* CAUTION: IE hackery ahead */
+select::-ms-expand {
+  display: none; /* remove default arrow on ie10 and ie11 */
+}
+
+/* target Internet Explorer 9 to undo the custom arrow */
+@media screen and (min-width: 0\0) {
+  select {
+    background: none\9;
+    padding: 5px\9;
+  }
+}

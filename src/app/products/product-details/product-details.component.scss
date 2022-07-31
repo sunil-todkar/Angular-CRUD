@@ -1,0 +1,8 @@
+.product-details-wrapper {
+  h2 {
+    font-family: gotham-regular;
+  }
+  ::ng-deep .star-rating-warpper {
+    display: inline-block;
+  }
+}

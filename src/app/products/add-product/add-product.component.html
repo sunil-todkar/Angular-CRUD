@@ -1,0 +1,75 @@
+<div class="add-product-wrapper">
+  <div class="row">
+    <div class="col">
+      <form [formGroup]="addProductForm" (ngSubmit)="onSubmit()">
+        <div class="form-group row">
+          <div class="col-sm-6">
+            <div class="add-left-iamge-wrapper" [ngClass]="{ 'is-invalid': submitted && f.image.errors }">
+              <span>Add Product Image Here</span>
+              <img src="../../../assets/images/add-photo2.png" class="add-photo">
+              <input type="file" name="image" formControlName="image" (change)="readImage($event)">
+              <div *ngIf="submitted && f.image.errors" class="invalid-feedback">
+                <div *ngIf="f.image.errors.required">First Name is required</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <img [src]="imgProductSrc || imgProductPath" class="img-fluid product-iamge-show">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="name">Product Name</label>
+          <input type="txet" class="form-control" id="name" placeholder="Add Name Here" formControlName="name"
+            [ngClass]="{ 'is-invalid': submitted && f.name.errors }">
+          <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+            <div *ngIf="f.name.errors.required">Name is required</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="code">Product Code</label>
+          <input type="txet" class="form-control" id="code" placeholder="Add code here" formControlName="code"
+            [ngClass]="{ 'is-invalid': submitted && f.code.errors }">
+          <div *ngIf="submitted && f.code.errors" class="invalid-feedback">
+            <div *ngIf="f.code.errors.required">Code is required</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="status">Product Status</label>
+          <input type="txet" class="form-control" id="status" placeholder="Add status here" formControlName="status"
+            [ngClass]="{ 'is-invalid': submitted && f.status.errors }">
+          <div *ngIf="submitted && f.status.errors" class="invalid-feedback">
+            <div *ngIf="f.status.errors.required">Status is required</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="price">Price</label>
+          <input type="txet" class="form-control" id="price" placeholder="Add price here" formControlName="price"
+            [ngClass]="{ 'is-invalid': submitted && f.price.errors }">
+          <div *ngIf="submitted && f.price.errors" class="invalid-feedback">
+            <div *ngIf="f.price.errors.required">Price is required</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="ratings">Add Rating</label>
+          <input type="txet" class="form-control" id="ratings" placeholder="add rating here" formControlName="ratings"
+            [ngClass]="{ 'is-invalid': submitted && f.ratings.errors }">
+          <div *ngIf="submitted && f.ratings.errors" class="invalid-feedback">
+            <div *ngIf="f.ratings.errors.required">Rating is required</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="ratings">Add Description</label>
+          <textarea class="form-control" rows="5" id="description" placeholder="Add description here"
+            formControlName="description" [ngClass]="{ 'is-invalid': submitted && f.description.errors }"></textarea>
+          <div *ngIf="submitted && f.description.errors" class="invalid-feedback">
+            <div *ngIf="f.description.errors.required">Description is required</div>
+          </div>
+        </div>
+        <div class="form-group mt-4">
+          <button type="submit" class="btn btn-primary mr-4">ADD PRODUCTS</button>
+          <button type="submit" class="btn btn-primary" (click)="cancelAddProduct()">CANCEL</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

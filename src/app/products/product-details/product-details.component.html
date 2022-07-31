@@ -1,0 +1,33 @@
+<div class="product-details-wrapper mt-5 mb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="card" *ngIf="productData">
+          <!-- {{productData|json}} -->
+          <div class="card-header">
+            <h2>{{productData.name}}</h2>
+          </div>
+          <div class="card-body row">
+            <div class="col-sm-5">
+              <img [src]="productData.image" class="img-thumbnail" width="304" height="236">
+            </div>
+            <div class="col-sm-7">
+              <p><strong>Code: </strong>{{productData.code}}</p>
+              <p><strong>Status: </strong>{{productData.status}}</p>
+              <p><strong>Price: </strong>{{productData.price}}</p>
+              <p><strong>Ratings: <app-star [rate]="productData.ratings"></app-star></strong> </p>
+              <p><strong>Description: </strong>{{productData.description}}</p>
+            </div>
+          </div>
+          <div class="card-footer"><button type="button" class="btn btn-secondary" (click)="goBack()">Go Back</button>
+          </div>
+        </div>
+        <div class="card" *ngIf="!productData">
+          <div class="card-body">
+            <h3>No Products Data Available</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

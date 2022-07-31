@@ -1,0 +1,37 @@
+.edit-product-wrapper {
+  form {
+    background-color: #eee;
+    padding: 30px;
+    .upadate-image-outer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .upadte-img-wrapper {
+        width: 235px;
+        img {
+          border: 1px solid #888;
+          border-radius: 50%;
+          width: 210px;
+          height: 210px;
+        }
+      }
+      i.fa.fa-camera {
+        font-size: 41px;
+        position: absolute;
+        z-index: 1;
+        margin-top: 89px;
+        margin-left: 40px;
+        color: #656565;
+      }
+    }
+  }
+  input[type="file"] {
+    opacity: 0;
+    cursor: pointer;
+    width: 211px;
+    height: 211px;
+    position: absolute;
+    border: 0;
+    margin-left: -210px;
+  }
+}

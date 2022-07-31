@@ -1,0 +1,56 @@
+#product-list-wrapper {
+  margin-bottom: 40px;
+  h2 {
+    font-family: gotham-regular;
+    color: #0063b6;
+  }
+  .search-input {
+    width: 250px;
+  }
+  img {
+    width: 50px;
+    height: 50px;
+  }
+  table {
+    thead {
+      color: #337ab7;
+    }
+  }
+  a {
+    color: #3275bc;
+  }
+  .add-product-link-wrapper {
+    a {
+      cursor: pointer;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .fa-pencil,
+  .fa-ban {
+    cursor: pointer;
+  }
+}
+
+#addProductModal {
+  .modal-title {
+    font-family: gotham-regular;
+  }
+  .modal-dialog,
+  .modal-content {
+    @media (min-width: 991px) {
+      max-width: 800px;
+    }
+  }
+}
+
+// ::ng-deep .modal-dialog {
+//   max-width: 800px;
+// }
+// ::ng-deep .modal-content {
+//   max-width: 800px;
+// }
+// ::ng-deep .modal-title {
+//   font-family: gotham-regular;
+// }

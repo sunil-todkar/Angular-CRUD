@@ -1,0 +1,191 @@
+.About-first {
+  padding: 60px 0 40px 0;
+}
+.About-first h3 {
+  color: #413e66;
+  font-size: 40px;
+  font-family: gotham-regular;
+}
+
+#services {
+  padding: 60px 0 40px 0;
+  background: #f5f8fd;
+}
+.section-header h3 {
+  font-size: 40px;
+  color: #413e66;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  font-family: gotham-regular;
+}
+.section-header p {
+  text-align: center;
+  margin: auto;
+  font-size: 15px;
+  padding-bottom: 60px;
+  color: #535074;
+  width: 50%;
+}
+#services .box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+#services .icon {
+  margin: 0 auto 15px auto;
+  padding: 12px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+#services .icon i {
+  font-size: 36px;
+  line-height: 1;
+  font-style: normal;
+}
+.ion-ios-analytics-outline:before {
+  content: "\f29e";
+  font-family: FontAwesome;
+}
+.ion-ios-bookmarks-outline:before {
+  content: "\f017";
+  font-family: FontAwesome;
+}
+.ion-ios-paper-outline:before {
+  content: "\f21e";
+  font-family: FontAwesome;
+}
+.ion-ios-speedometer-outline:before {
+  content: "\f270";
+  font-family: FontAwesome;
+}
+.ion-ios-world-outline:before {
+  content: "\f073";
+  font-family: FontAwesome;
+}
+.ion-ios-clock-outline:before {
+  content: "\f0a1";
+  font-family: FontAwesome;
+}
+
+#services .title a {
+  color: #111;
+}
+#services .description {
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+#why-us {
+  padding: 60px 0;
+}
+#why-us .why-us-content .features {
+  margin: 0 0 15px 0;
+  padding: 0;
+  transition: 0.3s ease-in-out;
+}
+#why-us .why-us-content .features i {
+  font-size: 36px;
+  float: left;
+}
+#why-us .why-us-content .features h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 56px;
+  color: #413e66;
+  margin-bottom: 5px;
+}
+#why-us .why-us-content .features p {
+  font-size: 16px;
+  margin-left: 56px;
+  color: #555186;
+}
+#why-us .counters {
+  padding-top: 40px;
+}
+#why-us .counters span {
+  font-weight: bold;
+  font-size: 48px;
+  display: block;
+  color: #555186;
+}
+#why-us .counters p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  color: #8a87b6;
+}
+#call-to-action {
+  background: #2d2b46;
+  background-size: cover;
+  padding: 40px 0;
+}
+#call-to-action .cta-title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+#call-to-action .cta-text {
+  color: #fff;
+}
+#call-to-action .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 26px;
+  border-radius: 3px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 3px solid #fff;
+  color: #fff;
+}
+.container-left-half,
+.container-right-half {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.container-left-half {
+  margin-right: 0;
+  margin-left: auto;
+}
+.container-right-half {
+  margin-right: auto;
+  margin-left: 0;
+}
+@media (min-width: 768px) {
+  .container-left-half,
+  .container-right-half {
+    width: 375px;
+  }
+}
+@media (min-width: 992px) {
+  .container-left-half,
+  .container-right-half {
+    width: 485px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-left-half,
+  .container-right-half {
+    width: 585px;
+  }
+}
+.why-us-img {
+  background-image: url("../../assets/images//why-us.jpg");
+  background-repeat: no-repeat;
+  height: 500px;
+  background-size: cover;
+}

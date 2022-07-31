@@ -1,1 +1,87 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: gotham-regular;
+  src: url("./assets/fonts/gotham-medium-regular.ttf");
+}
+
+@font-face {
+  font-family: poppins-medium;
+  src: url("./assets/fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: Nunito-Bold;
+  src: url("./assets/fonts/Nunito-Bold.ttf");
+}
+
+@font-face {
+  font-family: gotham-rounded-book;
+  src: url("./assets/fonts/gotham-rounded-book.ttf");
+}
+
+html,
+body {
+  font-family: "gotham-rounded-book", sans-serif !important;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+  background-image: unset;
+}
+.modal {
+  z-index: 1111;
+}
+
+.alert-box {
+  max-width: 365px;
+  transform: translate(0, -50%);
+  top: 50%;
+  margin: 0 auto;
+  .modal-header {
+    justify-content: flex-start;
+    align-items: center;
+    img {
+      margin-right: 20px;
+    }
+  }
+}
+.add-products {
+  max-width: 800px;
+  .modal-content {
+    max-width: 800px;
+  }
+}
+.edit-products {
+  max-width: 800px;
+  .modal-title {
+    font-family: gotham-regular;
+  }
+  .modal-content {
+    max-width: 800px;
+  }
+}
+
+.modal-content.confirm {
+  width: 350px;
+  transform: translate(0, -50%);
+  top: 50%;
+  margin: 0 auto;
+  .modal-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  img {
+    width: 25px;
+    margin-right: 40px;
+  }
+}
+
+.terms-modal {
+  max-width: 700px;
+  .modal-content {
+    max-width: 700px;
+  }
+}

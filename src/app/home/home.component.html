@@ -1,0 +1,44 @@
+<section class="banner-wrapper">
+    <div id="acme-banner-slider" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#acme-banner-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#acme-banner-slider" data-slide-to="1"></li>
+            <li data-target="#acme-banner-slider" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active" *ngFor="let slider of homeSliders; first as isFirst"
+                [class.active]="(isFirst)">
+                <img [src]="slider.image" class="img-fluid">
+                <div class="carousel-caption">
+                    <div class="banner-info">
+                        <h3>{{slider.title}}</h3>
+                        <p>{{slider.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#acme-banner-slider" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#acme-banner-slider" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+</section>
+
+
+<app-why-choose></app-why-choose>
+<app-our-tour></app-our-tour>
+<app-our-client></app-our-client>
+<app-home-features></app-home-features>
+
+<section class="home-info-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Generate Lorem Ipsum placeholder text. Select the number of characters, words, sentences or
+                    paragraphs, and hit generate! Gravida dictum fusce ut placerat orci nulla.</h2>
+            </div>
+        </div>
+    </div>
+</section>

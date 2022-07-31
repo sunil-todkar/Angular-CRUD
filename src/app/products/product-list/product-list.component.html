@@ -1,0 +1,117 @@
+<section id="product-list-wrapper">
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col">
+        <h2 class="text-center">Product List View</h2>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col">
+        <alert type="info" *ngIf="rateValue" [dismissible]="dismissible">
+          {{rateValue}}
+        </alert>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <h5><strong>{{tableTitle}}</strong></h5>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col col-sm-2">
+                <p>Filter By:</p>
+              </div>
+              <div class="col col-sm-7">
+                <form>
+                  <div class="form-group">
+                    <input type="text" class="form-control search-input" name="searchProduct" placeholder="Search Here"
+                      (input)="filterProducts($event.target.value)" [(ngModel)]="searchProduct">
+                  </div>
+                </form>
+              </div>
+              <div class="col col-sm-3 add-product-link-wrapper">
+                <a (click)="openModal(template)">
+                  <i class="fa fa-plus" aria-hidden="true"></i> ADD PRODUCT
+                </a>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table table-striped mb-4" *ngIf="products && products.length">
+                <thead>
+                  <tr>
+                    <th><button type="button" class="btn btn-primary"
+                        (click)="toggleProductImages()">{{showImages == true ? "Hide": "Show"}} Images</button>
+                    </th>
+                    <th>Product Name</th>
+                    <th>Product Code</th>
+                    <th>Status</th>
+                    <th>Price</th>
+                    <th>Ratings</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let product of filteredProducts">
+                    <td><img [src]="product.image" *ngIf="showImages" /></td>
+                    <td><a [routerLink]="['/products',product.id]">{{product.name}}</a></td>
+                    <td>{{product.code | lowercase | convertToSpaces : '-'}}</td>
+                    <td>{{product.status}}</td>
+                    <td>{{product.price | currency:'USD':'symbol':'1.2-2'}}</td>
+                    <td>
+                      <app-star [rate]="product.ratings" (ratingClicked)="onRateClick($event)"></app-star>
+                    </td>
+                    <td>
+                      <a (click)="openEditProductModal(productEdittemplate, product)"><i class="fa fa-pencil mr-3"
+                          aria-hidden="true"></i>
+                      </a>
+                      <a (click)="deleteProduct(product.id)"><span><i class="fa fa-ban"
+                            aria-hidden="true"></i></span></a>
+                    </td>
+                  </tr>
+                  <tr *ngIf="filteredProducts.length === 0">
+                    <td colspan="6">
+                      <p>No data to display</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Add Product Module Start -->
+<ng-template #template>
+  <div id="addProductModal">
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">ADD PRODUCT HERE</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <app-add-product [productModelRef]="modalRef"></app-add-product>
+    </div>
+  </div>
+</ng-template>
+<!-- Add Product Module End -->
+
+
+<!-- Product Edit Module Start -->
+<ng-template #productEdittemplate>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Edit Product</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <app-edit-product [editProductData]="product" [editModelRef]="modalRef"></app-edit-product>
+  </div>
+</ng-template>
+<!-- Product Edit Module End -->

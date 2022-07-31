@@ -1,0 +1,237 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsXBxiTfaOICPhrOs_B8WopMNv4brb5AbkSoPrLYgv3ZC6ArVc",
+      "name": "Colgate",
+      "code": "p-101",
+      "status": "Available",
+      "price": "23345",
+      "ratings": "4",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "id": 2,
+      "image": "https://www.byrdie.com/thmb/0BbPNng5ddUEv1ixL2iLbwh3dBQ=/700x933/filters:fill(auto,1)/cdn.cliqueinc.com__cache__posts__71990__vaseline-uses-71990-1510349243495-promo.700x0c-a69c34c02ef8451ab835f6c9ab472855-24c1111ac7234ba0b7d9417d2ce33399.jpg",
+      "name": "Vaseline",
+      "code": "p-102",
+      "status": "Not Available",
+      "price": "32456",
+      "ratings": "1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "id": 3,
+      "image": "https://www.dabur.com/img/product/large/78-hajmola.jpg",
+      "name": "Hajmola",
+      "code": "p-103",
+      "status": "Available",
+      "price": "34233",
+      "ratings": "2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "id": 4,
+      "image": "https://4.imimg.com/data4/BU/AA/NSDMERP-30828630/boroline-250x250.png",
+      "name": "Boroline",
+      "code": "p-104",
+      "status": "Not Available",
+      "price": "87123",
+      "ratings": "3",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "id": 5,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/41pxkiXUdIL._SX385_.jpg",
+      "name": "Rasna",
+      "code": "p-105",
+      "status": "Available",
+      "price": "18900",
+      "ratings": "5",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "id": 6,
+      "image": "http://file.pinopen.com///item//23759/defaultImage/1513605953243.png",
+      "name": "Mortein",
+      "code": "p-106",
+      "status": "Not Available",
+      "price": "32598",
+      "ratings": "2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "id": 7,
+      "image": "http://www.respironics.com/img/philips-shield-blue@2x-63860dc1.png",
+      "name": "Philips",
+      "code": "p-107",
+      "status": "Available",
+      "price": "63214",
+      "ratings": "3",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "id": 8,
+      "image": "https://cdn.shopify.com/s/files/1/2435/5777/products/mctsmall_2048x.png?v=1536085389",
+      "name": "Boost",
+      "code": "p-108",
+      "status": "Not Available",
+      "price": "4367",
+      "ratings": "1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "id": 9,
+      "image": "https://vignette.wikia.nocookie.net/logopedia/images/a/aa/Limca.jpg/revision/latest?cb=20180330032721",
+      "name": "Limca",
+      "code": "p-109",
+      "status": "Available",
+      "price": "76129",
+      "ratings": "3",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "id": 10,
+      "image": "https://www.ezydeal.in/wp-content/uploads/2019/04/Glucon-D-Orange-Ref-1522151926-10004644.jpg",
+      "name": "Glucon D",
+      "code": "p-110",
+      "status": "Not Available",
+      "price": "66883",
+      "ratings": "5",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+      "image": "C:\\fakepath\\Office-Ganpati-Fest.JPEG",
+      "name": "gshsdfdf",
+      "code": "dfdsfds",
+      "status": "dfdsf",
+      "price": "343",
+      "ratings": "4",
+      "description": "mcdsnl lfj.dsfn lkfjdsklfjldskfn lkdfjdsf",
+      "id": 11
+    }
+  ],
+  "HomeSliders": [
+    {
+      "id": 1,
+      "image": "https://drive.google.com/uc?id=1UGljePkRQAzoW6xF1sCRpWoT7Jr21qev",
+      "title": "Indian IT Outsourcing Company For Offshore Software Development Services",
+      "description": "We’re an Indian software development company focused on just one thing - offshore software development services. 14+ years in business & 450+ developers strong, we have worked with startups, software product development companies, digital agencies and enterprises to help simplify their IT outsourcing experience and reduce costs/time-to-market."
+    },
+    {
+      "id": 2,
+      "image": "https://drive.google.com/uc?id=1a4_EqwOHoVky-ZgtykZ5eQieVI1X_C-Y",
+      "title": "Indian IT Outsourcing Company For Offshore Software Development Services",
+      "description": "We’re an Indian software development company focused on just one thing - offshore software development services. 14+ years in business & 450+ developers strong, we have worked with startups, software product development companies, digital agencies and enterprises to help simplify their IT outsourcing experience and reduce costs/time-to-market."
+    },
+    {
+      "id": 3,
+      "image": "https://drive.google.com/uc?id=1eMWMyhPa5IHP84MUl7fhEnTK7S98Y-UJ",
+      "title": "Indian IT Outsourcing Company For Offshore Software Development Services",
+      "description": "We’re an Indian software development company focused on just one thing - offshore software development services. 14+ years in business & 450+ developers strong, we have worked with startups, software product development companies, digital agencies and enterprises to help simplify their IT outsourcing experience and reduce costs/time-to-market."
+    }
+  ],
+  "features": [
+    {
+      "id": 1,
+      "image": "https://drive.google.com/uc?id=1K493lRQjwlpaHaZz8NiPAqgF2NWSwpid",
+      "title": "Card Title",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Imperdiet massa tincidunt nunc pulvinar sapien et ligula. Scelerisque purus semper eget duis. Nec ullamcorper sit amet risus nullam eget felis eget. "
+    },
+    {
+      "id": 2,
+      "image": "https://drive.google.com/uc?id=13gqK9VVF4VAu6O9DbOhho0KLXHWsd6g3",
+      "title": "Card Title",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Imperdiet massa tincidunt nunc pulvinar sapien et ligula. Scelerisque purus semper eget duis. Nec ullamcorper sit amet risus nullam eget felis eget. "
+    },
+    {
+      "id": 3,
+      "image": "https://drive.google.com/uc?id=1ylRH4UzYi5myYHBuiXo21Ggd61ivXGwr",
+      "title": "Card Title",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Imperdiet massa tincidunt nunc pulvinar sapien et ligula. Scelerisque purus semper eget duis. Nec ullamcorper sit amet risus nullam eget felis eget. "
+    },
+    {
+      "id": 4,
+      "image": "https://drive.google.com/uc?id=1ScSJYFp6PZvYb6C0AsF93QzxoWqayxZf",
+      "title": "Card Title",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Imperdiet massa tincidunt nunc pulvinar sapien et ligula. Scelerisque purus semper eget duis. Nec ullamcorper sit amet risus nullam eget felis eget. "
+    }
+  ],
+  "registration": [
+    {
+      "userType": "Author",
+      "country": "AL,Albania",
+      "state": "40",
+      "city": "Pune",
+      "acceptTerms": true,
+      "firstName": "Sunil",
+      "lastName": "Todkar",
+      "email": "sunil.todkar@clariontechnologies.co.in",
+      "password": "sunil@123",
+      "dateOfBirth": "2019-09-17T12:25:25.000Z",
+      "mobileNumber": "8698165771",
+      "navigationId": 2,
+      "id": 1
+    },
+    {
+      "userType": "eAdviser",
+      "country": "AD,Andorra",
+      "state": "4",
+      "city": "Pune",
+      "acceptTerms": true,
+      "firstName": "Amol",
+      "lastName": "Wankhede",
+      "email": "amol.wankhde@gmail.com",
+      "password": "amol@123",
+      "dateOfBirth": "2023-05-02T12:34:34.000Z",
+      "mobileNumber": "8698165771",
+      "navigationId": 2,
+      "id": 2
+    },
+    {
+      "userType": "eAdviser",
+      "country": "AL,Albania",
+      "state": "42",
+      "city": "Pune",
+      "acceptTerms": true,
+      "firstName": "Sunil",
+      "lastName": "Todkar",
+      "email": "sunil.todkar@3434clariontechnologies.co.in",
+      "password": "sunil@123",
+      "dateOfBirth": "2019-09-10T13:35:32.000Z",
+      "mobileNumber": "8698165771",
+      "navigationId": 3,
+      "id": 3
+    },
+    {
+      "userType": "eAdviser",
+      "country": "AF,Afghanistan",
+      "state": "1",
+      "city": "Pune",
+      "acceptTerms": true,
+      "firstName": "Vinit",
+      "lastName": "Brahme",
+      "email": "vinit.brahme@gmail.com",
+      "password": "sunil@123",
+      "dateOfBirth": "2019-09-01T14:01:49.000Z",
+      "mobileNumber": "8698165771",
+      "navigationId": 2,
+      "id": 4
+    },
+    {
+      "userType": "eAdviser",
+      "country": "AF,Afghanistan",
+      "state": "1",
+      "city": "Pune",
+      "acceptTerms": true,
+      "firstName": "wewe",
+      "lastName": "Todkar",
+      "email": "sunil.todkarrtrt@clariontechnologies.co.in",
+      "password": "sunil@123",
+      "dateOfBirth": "2019-09-10T07:52:30.000Z",
+      "mobileNumber": "8698165771",
+      "navigationId": 7,
+      "id": 5
+    }
+  ]
+}

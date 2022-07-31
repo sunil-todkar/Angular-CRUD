@@ -1,0 +1,62 @@
+.our-tour-wrapper {
+  h2 {
+    font-family: poppins-medium;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  .tour-left-bg {
+    background-image: url("../../../assets/images/our-tour3.jpg");
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: cover;
+  }
+  .tour-right-bg {
+    background: antiquewhite;
+  }
+  .text {
+    text-align: center;
+    .number {
+      font-weight: 600;
+      font-size: 28px;
+      color: #f9ab30;
+    }
+    span {
+      display: block;
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.7);
+      margin-bottom: 10px;
+    }
+  }
+}
+.container-left-half,
+.container-right-half {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.container-left-half {
+  margin-right: 0;
+  margin-left: auto;
+}
+.container-right-half {
+  margin-right: auto;
+  margin-left: 0;
+}
+@media (min-width: 768px) {
+  .container-left-half,
+  .container-right-half {
+    width: 375px;
+  }
+}
+@media (min-width: 992px) {
+  .container-left-half,
+  .container-right-half {
+    width: 485px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-left-half,
+  .container-right-half {
+    width: 585px;
+  }
+}

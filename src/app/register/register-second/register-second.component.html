@@ -1,0 +1,92 @@
+<div class="register-wrapper mt-5 mb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+          <div class="row mb-5">
+            <div class="col">
+              <h3>Registration</h3>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-sm-6">
+              <label for="userType">User Type</label>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <select class="form-control" id="userType" name="userType" formControlName="userType"
+                  (change)="changeUser($event)" [ngClass]="{ 'is-invalid': submitted && f.userType.errors }">
+                  <option value="" disabled>Please Select</option>
+                  <option [ngValue]="user" *ngFor="let user of User">{{user}}</option>
+                </select>
+                <div *ngIf=" submitted && f.userType.errors" class="invalid-feedback">
+                  <div *ngIf="f.userType.errors.required">User type is required</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-sm-6">
+              <label for="country">Select Country</label>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <select class="form-control" id="country" name="country" formControlName="country"
+                  [ngClass]="{ 'is-invalid': submitted && f.country.errors }"
+                  (change)="changeCountry($event.target.value)">
+                  <option value="">Please Select</option>
+                  <option *ngFor="let country of Countries" value="{{country}}">{{country[1]}}</option>
+                </select>
+                <div *ngIf=" submitted && f.country.errors" class="invalid-feedback">
+                  <div *ngIf="f.country.errors.required">Country is required</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-sm-6">
+              <label for="country">Select State</label>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <select class="form-control" id="state" name="state" formControlName="state"
+                  [ngClass]="{ 'is-invalid': submitted && f.state.errors }">
+                  <option value="">Please Select</option>
+                  <option *ngFor="let state of States" value="{{state[0]}}">{{state[1]}}</option>
+                </select>
+                <div *ngIf=" submitted && f.state.errors" class="invalid-feedback">
+                  <div *ngIf="f.state.errors.required">State is required</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-sm-6">
+              <label for="city">Enter City:</label>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="city" name="city" placeholder="Enter City Name"
+                formControlName="city" [ngClass]="{ 'is-invalid': submitted && f.city.errors }">
+              <div *ngIf=" submitted && f.city.errors" class="invalid-feedback">
+                <div *ngIf="f.city.errors.required">City is required</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" formControlName="acceptTerms" id="acceptTerms" class="form-check-input"
+              [ngClass]="{ 'is-invalid': submitted && f.acceptTerms.errors }" />
+            <label for="acceptTerms" class="form-check-label">I accept the <u>Terms and
+                Conditions.</u> Lorem
+              ipsum
+              is placeholder text commonly used in the graphic, print, and publishing industries for previewing
+              layouts and visual mockups.</label>
+            <div *ngIf="submitted && f.acceptTerms.errors" class="invalid-feedback">Accept Ts & Cs is required</div>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
